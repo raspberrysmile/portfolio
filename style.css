@@ -1,10 +1,88 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital@0;1&family=Poppins:ital,wght@0,300;0,500;1,300&display=swap');
 /* style.css */
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	width: 100%;
 }
 
 h1, h2, h3 {
 	font-family: 'Aleo', serif;
+}
+a {
+	color: #fff;
+}
+a:hover {
+	color: #ffbc42;
+}
+.site-wrapper {
+	position: relative;
+	display: block;
+	padding: 20px 0;
+}
+.site-wrapper > div {
+	scroll-margin-top: 80px;
+	padding: 40px 10% 0;
+}
+.site-wrapper img{
+	width: 100%;
+}
+nav {
+	position: sticky;
+	top: 40px;
+	background: #005b8d;
+	border-radius: 10px;
+	margin: 0 auto;
+	width: 80%;
+	border: 2px solid #004a73;
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+nav ul, nav ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav ul li a {
+	display: block;
+	padding: 20px 10px;
+}
+.bice-blue {
+	background: #006ba6;
+	color: #fff;
+}
+.dodger-blue {
+	background: #0496ff;
+	color: #fff;
+}
+.raspberry {
+	background: #d81159;
+	color: #fff;
+}
+.portfolio-item {
+	display: flex;
+	flex-wrap: wrap;
+}
+.portfolio-item > div {
+	width: 48%;
+}
+.portfolio-writeup {
+	display: block;
+	padding: 0 0 0 4%;
+}
+.portfolio-writeup span {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	padding: 2px 4px;
+	font-style: italic;
+	line-height: 2;
 }
