@@ -3,6 +3,7 @@
 /* style.css */
 html {
 	scroll-behavior: smooth;
+	height: 100%;
 }
 body {
 	font-family: 'Poppins', sans-serif;
@@ -13,6 +14,9 @@ body {
 h1, h2, h3 {
 	font-family: 'Aleo', serif;
 }
+p {
+	font-size: 20px;
+}
 a {
 	color: #fff;
 }
@@ -22,11 +26,15 @@ a:hover {
 .site-wrapper {
 	position: relative;
 	display: block;
-	padding: 20px 0;
 }
 .site-wrapper > div {
-	scroll-margin-top: 80px;
-	padding: 40px 10% 0;
+	min-height: 100vh;
+	scroll-margin-top: 160px;
+	padding: 0 10% 0;
+}
+.site-wrapper > div > div {
+	width: 80%;
+	margin: 0 auto;
 }
 .site-wrapper img{
 	width: 100%;
@@ -38,7 +46,6 @@ nav {
 	border-radius: 10px;
 	margin: 0 auto;
 	width: 80%;
-	border: 2px solid #004a73;
 }
 nav ul {
 	display: flex;
@@ -68,21 +75,33 @@ nav ul li a {
 	background: #d81159;
 	color: #fff;
 }
+#intro {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 .portfolio-item {
 	display: flex;
 	flex-wrap: wrap;
 }
-.portfolio-item > div {
-	width: 48%;
+.portfolio-img {
+	width: 52%;
 }
 .portfolio-writeup {
-	display: block;
-	padding: 0 0 0 4%;
+	width: 46%;
+	padding: 0 0 0 2%;
+}
+.portfolio-writeup p {
+	font-size: 18px;
 }
 .portfolio-writeup span {
 	background: rgba(0, 0, 0, 0.2);
 	border-radius: 3px;
 	padding: 2px 4px;
 	font-style: italic;
+	font-size: 16px;
 	line-height: 2;
 }
