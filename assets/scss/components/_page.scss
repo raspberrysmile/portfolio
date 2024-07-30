@@ -1,0 +1,49 @@
+@use '../variables/colors' as color;
+@use '../variables/font-styles' as font;
+
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+body {
+	background: color.$grey-eee;
+}
+.site-wrapper {
+	position: relative;
+	display: flex;
+
+	img{
+		width: 100%;
+	}
+}
+.right-wrapper {
+	width: 85%;
+}
+.content-wrapper {
+	min-height: 100vh;
+	padding: 0 15%;
+	scroll-margin-top: 160px;
+
+	&:last-child {
+		
+		.content {
+			margin: 0 auto;
+		}	
+	}
+}
+.content {
+	width: 80%;
+	margin: 0 auto 160px;
+}
+.align-center {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.contained {
+	background: color.$white;
+	border-radius: font.$size * 1.5;
+	padding: 4em;
+}

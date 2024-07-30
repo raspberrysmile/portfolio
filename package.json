@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Simple Workflow for my Portfolio",
+  "scripts": {
+    "autoprefixer": "postcss dist/css/*.css -u autoprefixer -r",
+    "scss": "sass --load-path=node_modules/normalize.css --style=compressed assets/scss:dist/css",
+    "lint-scss": "stylelint assets/scss/*.scss",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
+    "build:css": "run-s lint-scss scss autoprefixer",
+    "build": "run-s build:*",
+    "watch:css": "onchange \"assets/scss\" -- run-s build:css",
+    "watch": "run-p serve watch:*",
+    "start": "npm run watch"
+  },
+  "author": "Elaine Low",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.77.8"
+  },
+  "devDependencies": {
+    "stylelint": "^16.8.0",
+    "stylelint-config-standard-scss": "^13.1.0"
+  }
+}

@@ -1,0 +1,19 @@
+@use '../variables/colors' as color;
+@use '../variables/font-styles' as font;
+
+a {
+	color: color.$bittersweet;
+	font-family: font.$body;
+	text-decoration: none;
+
+	&.button {
+		border-radius: font.$size * 1.5;
+		border: 3px solid color.$bittersweet;
+		padding: 0.25em 1em;
+		
+		&:hover {
+			color: color.$white;
+			background: color.$bittersweet;
+		}
+	}
+}

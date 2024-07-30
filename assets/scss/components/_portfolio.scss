@@ -1,0 +1,22 @@
+@use '../variables/font-styles' as font;
+@use '../variables/colors' as color;
+
+.portfolio-item {
+	display: flex;
+	flex-wrap: wrap;
+
+	img {
+		box-shadow: 0 0 10px 10px color.$grey-ddd;
+	}
+}
+.portfolio-writeup {
+	margin-top: 2em;
+
+	span {
+		background: rgba(0, 0, 0, 0.2);
+		border-radius: 3px;
+		padding: 2px 4px;
+		font-style: italic;
+		line-height: 2;
+	}
+}
