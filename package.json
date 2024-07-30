@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Simple Workflow for my Portfolio",
   "scripts": {
-    "autoprefixer": "postcss dist/css/*.css -u autoprefixer -r",
-    "scss": "sass --load-path=node_modules/normalize.css --style=compressed assets/scss:dist/css",
+    "autoprefixer": "postcss css/*.css -u autoprefixer -r",
+    "scss": "sass --load-path=node_modules/normalize.css --style=compressed assets/scss:css",
     "lint-scss": "stylelint assets/scss/*.scss",
-    "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
+    "serve": "browser-sync start --server --files 'css/*.css, **/*.html'",
     "build:css": "run-s lint-scss scss autoprefixer",
     "build": "run-s build:*",
     "watch:css": "onchange \"assets/scss\" -- run-s build:css",

@@ -1,5 +1,6 @@
 # compiled output
-/dist
+/css/*map
+/css/variables
 
 # dependencies
 /node_modules
